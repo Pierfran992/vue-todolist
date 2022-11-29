@@ -1,9 +1,53 @@
+/* general rules */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: blue;
+header, footer {
+    background-color: #000000;
+    color: #EEEEEE;
+    width: 100%;
+    height: 100px;
+}
+
+main {
+    background-color: #EEEEEE;
+    width: 100%;
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    font-family: 'Nerko One', cursive;
+}
+
+/* header rules */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.ms_bar_title{
+    font-family: 'Carter One', cursive;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ms_slot_img_logo {
+    width: 80px;
+    height: auto;
+}
+
+header img {
+    width: 100%;
+    border: solid 2px #EEEEEE;
+    border-radius: 10px;
+}
+
+/* main rules */
+.container {
+    width: 50%;
+    max-width: 1200px;
+    margin: 100px auto;
 }
