@@ -30,6 +30,7 @@ createApp({
     },
     methods: {
         // metodi
+        // metodo per aggiungere un elemento alla lista
         addAnime() {
             // creo la condizione se l'user non inserisce niente nell'input
             if (this.newAnime.title === '') {
@@ -46,9 +47,12 @@ createApp({
             // svuoto l'input una volta che il nuovo oggetto è stato aggiunto alla lista
             this.newAnime.title = '';
         },
+
+        // metodo per eliminare un elemento dalla lista
         removeAnime(index) {
             this.listAnime.splice(index, 1);
-        }
+        },
+
     }
 
 }).mount("#myapp");
