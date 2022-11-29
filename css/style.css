@@ -47,7 +47,35 @@ header img {
 
 /* main rules */
 .container {
+    background-color: #2a2b2b;
+    color: #EEEEEE;
     width: 50%;
     max-width: 1200px;
     margin: 100px auto;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.new__anime {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 2px #EEEEEE;
+}
+.new__anime > input {
+    width: 300px;
+    padding-left: 5px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: solid 2px #EEEEEE;
+    border-radius: 30px;
+    cursor: pointer;
 }

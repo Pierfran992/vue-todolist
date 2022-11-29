@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
     <!-- link fonts google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +38,22 @@
     <main>
         <!-- container da richiamare con vuejs -->
         <div id="myapp" class="container">
+
+            <!-- creo l'input text per inserire nuovi elementi -->
+            <div class="new__anime">
+                <input type="text" placeholder="Nome anime...">
+                <div class="button">Aggiungi</div>
+            </div>
+
+            <!-- creo la lista che conterrà tutti gli anime da guardare -->
+            <div class="anime__list">
+                <ul>
+                    <li class="anime">
+
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </li>
+                </ul>
+            </div>
             
         </div>
 
