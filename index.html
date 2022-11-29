@@ -41,15 +41,16 @@
 
             <!-- creo l'input text per inserire nuovi elementi -->
             <div class="new__anime">
-                <input type="text" placeholder="Nome anime...">
-                <div class="button">Aggiungi</div>
+                <input type="text" placeholder="Nome anime..." v-model="newAnime.title" @KeyUp.enter="addAnime">
+                <div class="button" @click="addAnime">Aggiungi</div>
             </div>
 
             <!-- creo la lista che conterrà tutti gli anime da guardare -->
             <div class="anime__list">
                 <ul>
-                    <li class="anime">
-
+                    <li class="anime" v-for="(anime, i) in listAnime">
+                        {{anime.title}}
+                        <i class="fa-regular fa-circle-check"></i>
                         <i class="fa-regular fa-circle-xmark"></i>
                     </li>
                 </ul>

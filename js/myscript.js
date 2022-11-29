@@ -4,7 +4,12 @@ const {createApp} = Vue;
 createApp({
     data () {
         return {
-            newAnime: '',
+            newAnime: 
+                {
+                    title: "",
+                    done: false
+                },
+            
             listAnime: [
                 {
                     title: "Made in Abyss",
@@ -19,6 +24,13 @@ createApp({
                     done: false
                 },
             ]
+        }
+    },
+    methods: {
+        // metodi
+        addAnime() {
+            this.listAnime.push(this.newAnime.title)
+            console.log(this.listAnime);
         }
     }
 

@@ -54,7 +54,6 @@ header img {
     margin: 100px auto;
     padding: 10px;
     border-radius: 30px;
-    text-align: center;
     font-size: 20px;
 }
 
@@ -77,5 +76,20 @@ header img {
     padding: 5px 10px;
     border: solid 2px #EEEEEE;
     border-radius: 30px;
+    cursor: pointer;
+}
+
+.anime__list {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.anime {
+    padding-bottom: 3px;
+    border-bottom: solid 2px #000000;
+}
+
+.fa-circle-check, .fa-circle-xmark {
+    margin-left: 10px;
     cursor: pointer;
 }
