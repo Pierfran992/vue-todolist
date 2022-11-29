@@ -93,6 +93,15 @@ header img {
 .anime {
     padding-bottom: 3px;
     border-bottom: solid 2px #000000;
+    line-height: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.watched {
+    color: #C69749;
+    text-decoration: underline;
 }
 
 .fa-circle-check, .fa-circle-xmark {

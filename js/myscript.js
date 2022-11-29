@@ -53,6 +53,14 @@ createApp({
             this.listAnime.splice(index, 1);
         },
 
+        // metodo per segnare che un elemento della lista è stato guardato
+        watched(index) {
+            if(this.listAnime[index].done === false) {
+                this.listAnime[index].done = true;
+            } else {
+                this.listAnime[index].done = false;
+            }
+            
+        }
     }
-
 }).mount("#myapp");

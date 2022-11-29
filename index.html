@@ -52,9 +52,15 @@
             <div class="anime__list">
                 <ul v-if="listAnime.length > 0">
                     <li class="anime" v-for="(anime, i) in listAnime">
+                        <!-- titolo dell'anime -->
                         {{anime.title}}
-                        <i class="fa-regular fa-circle-check"></i>
-                        <i class="fa-regular fa-circle-xmark" @click="removeAnime(i)"></i>
+                        <!-- messaggio per dire all'utente che ha già guardato l'anime -->
+                        <span class="watched" v-if="listAnime[i].done">Guardato</span>
+                        <!-- contenitore tasti -->
+                        <div>
+                            <i class="fa-regular fa-circle-check" @click="watched(i)"></i>
+                            <i class="fa-regular fa-circle-xmark" @click="removeAnime(i)"></i>
+                        </div>
                     </li>
                 </ul>
 
