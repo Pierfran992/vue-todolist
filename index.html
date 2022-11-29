@@ -50,13 +50,16 @@
 
             <!-- creo la lista che conterrà tutti gli anime da guardare -->
             <div class="anime__list">
-                <ul>
+                <ul v-if="listAnime.length > 0">
                     <li class="anime" v-for="(anime, i) in listAnime">
                         {{anime.title}}
                         <i class="fa-regular fa-circle-check"></i>
-                        <i class="fa-regular fa-circle-xmark"></i>
+                        <i class="fa-regular fa-circle-xmark" @click="removeAnime(i)"></i>
                     </li>
                 </ul>
+
+                <!-- messaggio per avvisare che la lista è vuta -->
+                <p class="empty__list" v-else>Non hai pi&ugrave; da guardare! Vedi che hai anche vita vera da vivere...</p>
             </div>
             
         </div>
