@@ -45,6 +45,9 @@
                 <div class="button" @click="addAnime">Aggiungi</div>
             </div>
 
+            <!-- messaggio di errore -->
+            <p class="error" v-if="error">L'input è vuoto inserisci il nome di un anime</p>
+
             <!-- creo la lista che conterrà tutti gli anime da guardare -->
             <div class="anime__list">
                 <ul>

@@ -79,6 +79,12 @@ header img {
     cursor: pointer;
 }
 
+.error {
+    color: #C69749;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .anime__list {
     width: 80%;
     margin: 0 auto;
