@@ -29,7 +29,7 @@ createApp({
     methods: {
         // metodi
         addAnime() {
-            this.listAnime.push(this.newAnime.title)
+            this.listAnime.push(this.newAnime)
             console.log(this.listAnime);
         }
     }
