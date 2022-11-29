@@ -45,6 +45,9 @@ createApp({
 
             // svuoto l'input una volta che il nuovo oggetto è stato aggiunto alla lista
             this.newAnime.title = '';
+        },
+        removeAnime(index) {
+            this.listAnime.splice(index, 1);
         }
     }
 
